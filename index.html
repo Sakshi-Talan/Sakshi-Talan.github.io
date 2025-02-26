@@ -59,24 +59,35 @@
             max-width: 700px;
         }
 
-        /* Styling for Project Sections */
+        /* Project Box Styling */
         .project {
             border: 2px solid #ddd;
-            padding: 15px;
+            padding: 20px;
             margin: 15px auto;
             border-radius: 10px;
             background-color: #ffffff;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
             max-width: 700px;
-            text-align: left;
+            min-height: 180px; /* Ensures all boxes have the same height */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
+        /* Limit text length for consistency */
         .project p {
             font-size: 14px;
             line-height: 1.5;
-            max-height: 100px;
+            max-height: 60px;
             overflow: hidden;
             text-overflow: ellipsis;
+            white-space: normal;
+        }
+
+        /* Center-align buttons */
+        .project a {
+            display: inline-block;
+            margin: 5px;
         }
 
         /* Button Styling */
